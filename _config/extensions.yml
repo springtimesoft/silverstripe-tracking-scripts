@@ -1,0 +1,9 @@
+---
+Name: silverstripe_tracking_scripts
+---
+PageController:
+  extensions:
+    - Springtimesoft\TrackingScripts\Extensions\PageControllerExtension
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Springtimesoft\TrackingScripts\Extensions\SiteConfigExtension
