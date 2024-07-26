@@ -2,6 +2,7 @@
 
 namespace Springtimesoft\TrackingScripts\Extensions;
 
+use Silverstripe\CSP\NonceGenerator;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\FieldType\DBHTMLVarchar;
 use SilverStripe\View\Requirements;
@@ -33,9 +34,16 @@ class PageControllerExtension extends DataExtension
         $head = trim($head);
         $body = trim($body);
 
+        // Retrieve nonce if CSP module is installed
+        $scriptAttributes = '';
+        if (class_exists('Silverstripe\CSP\NonceGenerator')) {
+            $nonce            = NonceGenerator::get();
+            $scriptAttributes = " nonce=\"{$nonce}\"";
+        }
+
         // insert header scripts if required
         if (strlen($head)) {
-            Requirements::insertHeadTags("<script>\n{$head}\n</script>");
+            Requirements::insertHeadTags("<script{$scriptAttributes}>\n{$head}\n</script>");
         }
 
         // return body code (html / javascript) set
