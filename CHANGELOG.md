@@ -1,6 +1,11 @@
 # Changelog
 
-Notable changes to Mailpit will be documented in this file.
+Notable changes will be documented in this file.
+
+
+## [1.0.1]
+
+- Add nonce support when Silverstripe CSP module is present
 
 
 ## [1.0.0]
