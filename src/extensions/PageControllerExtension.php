@@ -2,13 +2,13 @@
 
 namespace Springtimesoft\TrackingScripts\Extensions;
 
+use SilverStripe\Core\Extension;
 use Silverstripe\CSP\NonceGenerator;
-use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\FieldType\DBHTMLVarchar;
 use SilverStripe\View\Requirements;
 use Springtimesoft\TrackingScripts\Models\TrackingScript;
 
-class PageControllerExtension extends DataExtension
+class PageControllerExtension extends Extension
 {
     /**
      * Generate tracking scripts. You should have $TrackingScripts just below
