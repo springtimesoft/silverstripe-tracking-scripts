@@ -1,6 +1,6 @@
 # Silverstripe Tracking Scripts
 
-A module to easy manage your site tracking scripts from your admin settings.
+A module to easy manage your site's tracking scripts from your admin settings.
 Options currently include Google Analytics 4 (GA4), Google Tag Manager and Meta Pixel.
 
 
