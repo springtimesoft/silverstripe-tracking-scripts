@@ -2,6 +2,10 @@
 
 Notable changes will be documented in this file.
 
+## [1.0.2]
+
+- Replace deprecated DataExtension with Extension
+
 
 ## [1.0.1]
 
