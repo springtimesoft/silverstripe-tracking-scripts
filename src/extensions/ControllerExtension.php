@@ -8,7 +8,7 @@ use SilverStripe\ORM\FieldType\DBHTMLVarchar;
 use SilverStripe\View\Requirements;
 use Springtimesoft\TrackingScripts\Models\TrackingScript;
 
-class PageControllerExtension extends Extension
+class ControllerExtension extends Extension
 {
     /**
      * Generate tracking scripts. You should have $TrackingScripts just below
