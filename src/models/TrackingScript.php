@@ -6,6 +6,7 @@
 
 namespace Springtimesoft\TrackingScripts\Models;
 
+use SilverStripe\Core\Validation\ValidationResult;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Permission;
 
@@ -66,7 +67,7 @@ class TrackingScript extends DataObject
         $fields->removeByName(
             [
                 'SortOrder',
-            ]
+            ],
         );
 
         return $fields;
@@ -125,7 +126,7 @@ class TrackingScript extends DataObject
      *
      * @return ValidationResult
      */
-    public function validate()
+    public function validate(): ValidationResult
     {
         $valid = parent::validate();
 
