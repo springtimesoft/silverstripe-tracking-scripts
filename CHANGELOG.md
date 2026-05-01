@@ -2,6 +2,10 @@
 
 Notable changes will be documented in this file.
 
+## [2.0.0]
+
+-   Support for Silverstripe 6
+
 ## [1.0.3]
 
 -   Extend Controller to allow for tracking on Login page (if overriding Security.ss)

@@ -21,8 +21,8 @@
         "issues": "https://github.com/springtimesoft/silverstripe-tracking-scripts/issues"
     },
     "require": {
-        "silverstripe/siteconfig": "^4.0 || ^5.0",
-        "symbiote/silverstripe-gridfieldextensions": "^3.2 || ^4.0"
+        "silverstripe/siteconfig": "^6.0",
+        "symbiote/silverstripe-gridfieldextensions": "^5.2"
     },
     "autoload": {
         "psr-4": {
