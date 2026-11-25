@@ -3,7 +3,7 @@
 namespace Springtimesoft\TrackingScripts\Extensions;
 
 use SilverStripe\Core\Extension;
-use Silverstripe\CSP\NonceGenerator;
+use Silverstripe\CSP\Nonce\NonceGenerator;
 use SilverStripe\ORM\FieldType\DBHTMLVarchar;
 use SilverStripe\View\Requirements;
 use Springtimesoft\TrackingScripts\Models\TrackingScript;
@@ -36,9 +36,9 @@ class ControllerExtension extends Extension
 
         // Retrieve nonce if CSP module is installed
         $scriptAttributes = '';
-        if (class_exists('Silverstripe\CSP\NonceGenerator')) {
+        if (class_exists('Silverstripe\CSP\Nonce\NonceGenerator')) {
             $nonce            = NonceGenerator::get();
-            $scriptAttributes = " nonce=\"{$nonce}\"";
+	    $scriptAttributes = " nonce=\"{$nonce}\"";
         }
 
         // insert header scripts if required
